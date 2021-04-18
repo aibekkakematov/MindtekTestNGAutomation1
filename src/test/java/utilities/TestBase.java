@@ -8,7 +8,7 @@ public class TestBase {
 
     protected WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"regression", "smoke"})
     public  void setUp(){
         // WebDriverManager.chromedriver().setup();
         //driver=new ChromeDriver();
@@ -16,7 +16,7 @@ public class TestBase {
         // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver = Driver.getDriver();
     }
-    @AfterMethod
+    @AfterMethod(groups = {"regression", "smoke"})
 
     public void tearDown() throws InterruptedException {
         Thread.sleep(3000);

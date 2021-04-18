@@ -16,7 +16,7 @@ import utilities.TestBase;
 public class BlazeDemoTest extends TestBase {
 
 
-    @Test
+    @Test(groups = {"regression"})
     public void test(){
         BlazeDemoHomePage blazeDemoHomePage = new BlazeDemoHomePage();
         driver.get("https://blazedemo.com/index.php");

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class BlazeDemoPriceTest extends TestBase {
 
-    @Test
+    @Test(groups = {"regression", "smoke"})
     public void priceTest(){
         BlazeDemoHomePage blazeDemoHomePage = new BlazeDemoHomePage();
         BlazeDemoFlightsPage blazeDemoFlightsPage = new BlazeDemoFlightsPage();
