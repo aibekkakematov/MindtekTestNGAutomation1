@@ -17,7 +17,7 @@ public class SauceDemoAppTest extends TestBase {
     @Test(groups = {"regression", "smoke"})
     public void filterTest(){
         driver.get(Configuration.getProperty("SauceDemoURL"));
-        String expectedTitle="Swag Lab";
+        String expectedTitle="Swag Labs";
         String actualTitle= driver.getTitle();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(actualTitle, expectedTitle);
